@@ -21,14 +21,5 @@ jobs:
 
       - run: npm ci
 
-      - name: Install Playwright Chromium
-        run: npx playwright install chromium --with-deps
-
       - name: Spec compliance
-        run: node scripts/spec.js all
-
-      - name: Node tests
-        run: node --test tests/*.test.js src/utils/*.test.js src/store/*.test.js
-
-      - name: Browser tests
-        run: npx web-test-runner --config .configs/web-test-runner.config.js
+        run: npm run spec -- check all
