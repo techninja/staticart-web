@@ -1,0 +1,111 @@
+/* Content and page styles — staticart.org */
+
+/* Architecture section */
+
+.arch {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+}
+
+.arch__desc {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* CTA footer */
+
+.cta-footer {
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-footer p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+/* Content pages */
+
+.content-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.content-page__back {
+  display: inline-block;
+  margin-bottom: var(--space-md);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* Prose */
+
+.prose h2 { margin-top: var(--space-xl); }
+.prose h3 { margin-top: var(--space-lg); }
+
+.prose p {
+  line-height: 1.7;
+  margin: var(--space-md) 0;
+  color: var(--color-text-muted);
+}
+
+.prose ul {
+  padding-left: var(--space-lg);
+  margin: var(--space-md) 0;
+}
+
+.prose li {
+  margin: var(--space-xs) 0;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+.prose code {
+  background: var(--color-border);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+}
+
+.prose pre {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  overflow-x: auto;
+  margin: var(--space-md) 0;
+}
+
+.prose a { color: var(--color-primary); }
+.prose strong { color: var(--color-text); }
+
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: var(--space-xl) 0;
+}
+
+/* Responsive */
+
+@media (width <= 768px) {
+  site-header .site-header__nav { display: none; }
+  site-header .site-header__mobile { display: flex; }
+
+  site-header .site-header__nav--open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-md) var(--space-lg);
+    gap: var(--space-md);
+  }
+}
