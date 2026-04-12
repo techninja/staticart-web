@@ -22,7 +22,7 @@ async function loadPage(slug) {
 
 export default define({
   tag: 'content-page-view',
-  [router.connect]: { url: '/page/:slug', stack: [] },
+  [router.connect]: { url: '/page/:slug', multiple: true, stack: [] },
   slug: '',
   page: {
     value: /** @type {any} */ (undefined),
@@ -32,6 +32,13 @@ export default define({
           host.page = p;
           invalidate();
         });
+    },
+    observe(host, val, prev) {
+      if (prev !== undefined && val === undefined && host.slug) {
+        loadPage(host.slug).then((p) => {
+          host.page = p;
+        });
+      }
     },
   },
   render: {
