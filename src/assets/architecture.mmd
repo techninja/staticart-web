@@ -1,0 +1,24 @@
+flowchart TB
+  subgraph DB["Database"]
+    dynamo["DynamoDB"]
+  end
+
+  rebuild["Build Trigger\n(GitHub Actions)"]
+
+  subgraph API["API (Lambda)"]
+    checkout["POST /checkout"]
+    webhook["POST /webhook"]
+    stock["GET /stock"]
+    orders["GET /orders"]
+    session["GET /session"]
+  end
+
+  subgraph CDN["Static Site (CDN)"]
+    direction LR
+    pages["Product pages"] ~~~ cart["Cart (localStorage)"] ~~~ spa["SPA (Hybrids.js)"]
+  end
+
+  checkout -- "queries" --> dynamo
+  dynamo -- "stock changed" --> rebuild
+  rebuild -- "deploy" --> CDN
+  CDN -- "checkout" --> checkout

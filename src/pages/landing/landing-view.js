@@ -5,6 +5,7 @@
 
 import { html, define, router } from 'hybrids';
 import ContentPageView from '#pages/content/content-page-view.js';
+import '#molecules/arch-diagram/index.js';
 
 export default define({
   tag: 'landing-view',
@@ -74,7 +75,9 @@ npm run dev</code></pre>
             A thin API layer (5 Lambda functions) handles checkout, webhooks, and stock.
             Everything else is static. Stock changes trigger a rebuild that updates the CDN.
           </p>
-          <p>[PLACEHOLDER: Architecture diagram — rendered SVG from the mermaid diagram]</p>
+          <div class="arch__diagram">
+            <arch-diagram></arch-diagram>
+          </div>
         </section>
 
         <section class="cta-footer">

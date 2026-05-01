@@ -16,7 +16,7 @@ The result: a full-featured store that costs pennies to host.
 
 StatiCart is built on two open source projects:
 
-**[Clearstack](https://github.com/techninja/clearstack)** — a no-build web component specification. ES modules served directly, no bundler, no compile step. Hybrids.js for components and state. Import maps for dependency resolution. Every file you write is the file the browser loads.
+**[Clearstack](https://clearstacks.org)** — a no-build web component specification. ES modules served directly, no bundler, no compile step. Hybrids.js for components and state. Import maps for dependency resolution. Every file you write is the file the browser loads.
 
 **[Stripe](https://stripe.com)** — handles all payment processing. StatiCart never touches card data. Stripe Checkout provides the payment form, Stripe webhooks confirm orders.
 
@@ -32,4 +32,4 @@ Contributions welcome — especially translations, shipping adapters, and import
 
 StatiCart was built by [techninja](https://github.com/techninja) as a practical answer to "how cheaply can you run a real online store?" The answer turned out to be: almost free.
 
-[PLACEHOLDER: Brief bio, photo, or link to personal site]
+Built by [James Todd](https://github.com/techninja) — open source developer, API architect, and privacy advocate. Building tools that respect your data.

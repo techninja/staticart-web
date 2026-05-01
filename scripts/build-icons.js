@@ -53,6 +53,8 @@ const ICON_MAP = {
   box: 'box',
   star: 'star',
   type: 'text',
+  hammer: 'hammer',
+  'shopping-cart': 'shopping-cart',
 };
 
 /**

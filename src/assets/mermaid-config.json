@@ -1,0 +1,37 @@
+{
+  "theme": "base",
+  "block": {
+    "padding": 12
+  },
+  "flowchart": {
+    "nodeSpacing": 60,
+    "rankSpacing": 70,
+    "diagramPadding": 10,
+    "curve": "basis",
+    "defaultRenderer": "dagre",
+    "htmlLabels": true,
+    "padding": 15,
+    "subGraphTitleMargin": {
+      "top": 20,
+      "bottom": 10
+    }
+  },
+  "themeVariables": {
+    "primaryColor": "#e2e8f0",
+    "primaryTextColor": "#1e293b",
+    "primaryBorderColor": "#94a3b8",
+    "lineColor": "#475569",
+    "secondaryColor": "#f1f5f9",
+    "tertiaryColor": "#f1f5f9",
+    "clusterBkg": "#f1f5f9",
+    "clusterBorder": "#94a3b8",
+    "edgeLabelBackground": "#ffffff",
+    "nodeTextColor": "#1e293b",
+    "mainBkg": "#e2e8f0",
+    "nodeBorder": "#94a3b8",
+    "fontFamily": "system-ui, -apple-system, sans-serif",
+    "fontSize": "14px",
+    "borderRadius": "8px",
+    "arrowMarkerAbsolute": true
+  }
+}

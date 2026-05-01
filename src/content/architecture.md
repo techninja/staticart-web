@@ -18,7 +18,7 @@ StatiCart is three layers:
 
 **Database (DynamoDB)** — single table design. Products keyed by SKU with stock counts. Orders keyed by order ID with email GSI for history lookup. Conditional writes prevent overselling.
 
-[PLACEHOLDER: Architecture diagram — render the mermaid diagram from the README as a static SVG image here]
+![StatiCart architecture diagram](/assets/architecture.svg)
 
 ## How a Purchase Works
 
@@ -37,7 +37,7 @@ The entire server-side path is steps 3-9. Everything else is static.
 
 ## Platform Stacking
 
-StatiCart is built on [Clearstack](https://github.com/techninja/clearstack), a no-build web component specification. Clearstack provides the project scaffold, spec compliance checks, and development conventions. StatiCart adds e-commerce on top.
+StatiCart is built on [Clearstack](https://clearstacks.org), a no-build web component specification. Clearstack provides the project scaffold, spec compliance checks, and development conventions. StatiCart adds e-commerce on top.
 
 When you create a store, you get a Clearstack project with StatiCart vendored in:
 

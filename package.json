@@ -9,7 +9,9 @@
     "dev": "node --watch --env-file=.env --env-file=.env.local src/server.js",
     "postinstall": "node scripts/setup.js",
     "spec": "clearstack",
-    "release": "node scripts/release.js"
+    "release": "node scripts/release.js",
+    "build:diagrams": "node scripts/build-diagrams.js",
+    "dev:diagrams": "node scripts/build-diagrams.js --watch"
   },
   "keywords": [],
   "author": "",

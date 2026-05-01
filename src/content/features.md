@@ -23,7 +23,7 @@ Supports automatic tax calculation, flat/tiered/custom shipping, and multiple cu
 
 ## No Build Step
 
-Built on [Clearstack](https://github.com/techninja/clearstack) — a no-build web component specification using [Hybrids.js](https://hybrids.js.org). ES modules served directly to the browser. Import maps resolve dependencies. No webpack, no Vite, no compile step.
+Built on [Clearstack](https://clearstacks.org) — a no-build web component specification using [Hybrids.js](https://hybrids.js.org). ES modules served directly to the browser. Import maps resolve dependencies. No webpack, no Vite, no compile step.
 
 Every file you write is the file the browser loads. Debug in devtools, see your actual source.
 
