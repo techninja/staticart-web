@@ -23,20 +23,17 @@ export default define({
   currentPath: {
     value: () => window.location.pathname,
     connect(host, _key, invalidate) {
-      let last = window.location.pathname;
       const update = () => {
-        const cur = window.location.pathname;
-        if (last !== cur) {
-          last = cur;
-          host.menuOpen = false;
-          invalidate();
-        }
+        host.currentPath = window.location.pathname;
+        host.menuOpen = false;
+        invalidate();
       };
+      const router = host.closest('app-router') || document;
+      router.addEventListener('navigate', update);
       window.addEventListener('popstate', update);
-      const id = setInterval(update, 300);
       return () => {
+        router.removeEventListener('navigate', update);
         window.removeEventListener('popstate', update);
-        clearInterval(id);
       };
     },
   },

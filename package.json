@@ -17,7 +17,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@techninja/clearstack": "^0.3.22",
+    "@techninja/clearstack": "^0.3.32",
     "@types/node": "^22.0.0",
     "@open-wc/testing": "^4.0.0",
     "@web/test-runner": "^0.20.0",
