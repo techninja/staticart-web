@@ -1,0 +1,18 @@
+{
+  "/": {
+    "title": "StatiCart — 99% static e-commerce",
+    "description": "A full-featured e-commerce platform built on static hosting. Pennies to host, seconds to deploy."
+  },
+  "/page/about": {
+    "title": "About StatiCart",
+    "description": "The story behind StatiCart — what if 99% of your store was just static files on a CDN?"
+  },
+  "/page/features": {
+    "title": "Features | StatiCart",
+    "description": "Static-first architecture, Stripe checkout, passkey auth, and platform stacking. No monthly fees."
+  },
+  "/page/architecture": {
+    "title": "Architecture | StatiCart",
+    "description": "How StatiCart works — CDN-served storefronts with thin Lambda functions for checkout and orders."
+  }
+}

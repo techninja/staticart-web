@@ -22,9 +22,12 @@ jobs:
 
       - run: npm ci
 
+      - name: Build
+        run: node scripts/build.js
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy src --project-name=staticart-web
+          command: pages deploy dist --project-name=staticart-web
